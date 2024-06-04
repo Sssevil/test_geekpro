@@ -10,7 +10,7 @@ const PokemonCard = ({ pokemon }) => {
 
     useEffect(() => {
         getPokemonPicture(pokemon.url)
-    }, [])
+    }, [pokemon.url])
 
     return (
         <>
